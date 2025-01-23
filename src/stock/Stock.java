@@ -90,7 +90,7 @@ public class Stock {
    */
   @Override
   public String toString() {
-    return String.format("%s Current Price: $%.2f\n Gain/Loss:%.2f%%",
+    return String.format("%s Current Price: $ %.2f\n Gain/Loss:%.2f%%",
             this.getName(), this.getCurrentPrice(), this.getChangePercent() * 100);
   }
 }

@@ -1,18 +1,19 @@
 package stock;
 
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Test class with tests for all public methods of Stock class
+ * Test class with tests for all public methods of Stock class.
  */
 public class StockTest {
   private Stock apple;
   private Stock dell;
 
   /**
-   * Setup method to initialize test stocks for later testing
+   * Setup method to initialize test stocks for later testing.
    */
   @Before
   public void setup() {
@@ -23,7 +24,7 @@ public class StockTest {
   }
 
   /**
-   * Tests for getter methods of Stock class
+   * Tests for getter methods of Stock class.
    */
   @Test
   public void parameterEquals() {
@@ -35,16 +36,16 @@ public class StockTest {
   }
 
   /**
-   * Test for toString method of Stock class
+   * Test for toString method of Stock class.
    */
   @Test
   public void testToString() {
-    assertEquals("Apple Computer Current Price: $200.00\n"
+    assertEquals("Apple Computer Current Price: $ 200.00\n"
             + " Gain/Loss:100.00%", apple.toString());
   }
 
   /**
-   * Tests for setters of current price and cost basis of Stock class
+   * Tests for setters of current price and cost basis of Stock class.
    */
   @Test
   public void testSetters() {
