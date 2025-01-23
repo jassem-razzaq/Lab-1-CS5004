@@ -20,7 +20,7 @@ public class StockTest {
   public void parameterEquals() {
     assertEquals("AAPL", this.apple.getSymbol());
     assertEquals("Apple Computer", this.apple.getName());
-    assertEquals(100, this.apple.getCostbasis(), 0.01);
+    assertEquals(100, this.apple.getCostBasis(), 0.01);
     assertEquals(200, this.apple.getCurrentPrice(), 0.01);
     assertEquals(1, this.apple.getChangePercent(), 0.01);
   }
@@ -36,6 +36,6 @@ public class StockTest {
     this.apple.setCurrentPrice(500);
     this.dell.setCostBasis(99.01);
     assertEquals(500, apple.getCurrentPrice(), 0.01);
-    assertEquals(99.01, dell.getCostbasis(), 0.01);
+    assertEquals(99.01, dell.getCostBasis(), 0.01);
   }
 }

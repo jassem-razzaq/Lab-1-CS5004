@@ -50,7 +50,7 @@ public class Stock {
    * Function to get cost basis of stock.
    * @return cost basis of stock
    */
-  public double getCostbasis() {
+  public double getCostBasis() {
     return this.cost_basis;
   }
 
