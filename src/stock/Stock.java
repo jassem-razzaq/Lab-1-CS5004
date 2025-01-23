@@ -24,7 +24,7 @@ public class Stock {
    * @param name : Name of the stock.
    * @param cost_basis : Cost basis of stock.
    */
-  public Stock(String symbol, String name, double cost_basis){
+  public Stock(String symbol, String name, double cost_basis) {
     this.symbol = symbol;
     this.name = name;
     this.cost_basis = cost_basis;
@@ -64,7 +64,7 @@ public class Stock {
 
   /**
    * Function to set cost basis of stock.
-   * @param cost_basis: Cost basis of stock
+   * @param cost_basis Cost basis of stock
    */
   public void setCostBasis(double cost_basis) {
     this.cost_basis = cost_basis;
@@ -72,14 +72,14 @@ public class Stock {
 
   /**
    * Function to set current price of stock.
-   * @param current_price: Current price of stock
+   * @param current_price Current price of stock
    */
   public void setCurrentPrice(double current_price) {
     this.current_price = current_price;
   }
 
   /**
-   * Function to get fractional change between current price and cost basis
+   * Function to get fractional change between current price and cost basis.
    */
   public double getChangePercent() {
     return (this.current_price - this.cost_basis) / this.cost_basis;
